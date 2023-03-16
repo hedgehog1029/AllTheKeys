@@ -1,0 +1,10 @@
+{
+  "name": "AllTheKeys",
+  "description": "Lets you toot from A to Z!",
+  "version_number": "1.0.0",
+  "dependencies": [
+    "BepInEx-BepInExPack_TromboneChamp-5.4.21",
+    "TromboneChamps-BaboonAPI-2.2.0"
+  ],
+  "website_url": "https://github.com/hedgehog1029/AllTheKeys"
+}
