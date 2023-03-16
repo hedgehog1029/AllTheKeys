@@ -27,7 +27,7 @@ type AllKeysPatch() =
 
         ___toot_keys.AddRange extras
 
-[<BepInPlugin("ch.offbeatwit.allthekeys", "AllTheKeys", "1.0.0")>]
+[<BepInPlugin("ch.offbeatwit.allthekeys", "AllTheKeys", "1.0.1")>]
 [<BepInDependency("ch.offbeatwit.baboonapi.plugin", "2.0.0")>]
 type AllTheKeysPlugin() =
     inherit BaseUnityPlugin()
