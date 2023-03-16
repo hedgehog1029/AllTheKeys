@@ -15,11 +15,14 @@ type AllKeysPatch() =
           KeyCode.RightControl
           KeyCode.Space ]
 
+    static let parseKeyCode (code: string) =
+        Enum.Parse (typeof<KeyCode>, code) :?> KeyCode
+
     static member Postfix(___toot_keys: KeyCode ResizeArray) =
         ___toot_keys.Clear()
 
         [ 'A' .. 'Z' ]
-        |> Seq.map (string >> KeyCode.Parse)
+        |> Seq.map (string >> parseKeyCode)
         |> ___toot_keys.AddRange
 
         ___toot_keys.AddRange extras
